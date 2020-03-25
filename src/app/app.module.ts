@@ -19,6 +19,16 @@ import { AddprofilepicComponent } from './features/addprofilepic/addprofilepic.c
 import { UsersService } from './_services/users.service';
 import { Error } from "./_services/errors";
 import { ErrorpageComponent } from './core/errorpage/errorpage.component';
+import { FontAwesomeModule } from "../../node_modules/@fortawesome/angular-fontawesome";
+import { AppRoutingModule } from "./app-routing.module";
+import { HomePageComponent } from "./home-page/home-page.component";
+import { AccountPeakComponent } from "./home-page/account-peak/account-peak.component";
+import { HomeConnectorsComponent } from "./home-page/home-connectors/home-connectors.component";
+import { HomeConnectorsCardsComponent } from "./home-page/home-connectors/home-connectors-cards/home-connectors-cards.component";
+import { PostsComponent } from "./home-page/posts/posts.component";
+import { TagsComponent } from "./home-page/tags/tags.component";
+import { PostCardsComponent } from "./home-page/posts/post-cards/post-cards.component";
+import { HomePageHeaderComponent } from './homepageheader/homepageheader.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +45,21 @@ import { ErrorpageComponent } from './core/errorpage/errorpage.component';
     Regform4Component,
     Regform5Component,
     AddprofilepicComponent,
-    ErrorpageComponent
+    ErrorpageComponent,
+    HomePageComponent,
+    AccountPeakComponent,
+    HomeConnectorsComponent,
+    HomeConnectorsCardsComponent,
+    PostsComponent,
+    TagsComponent,
+    PostCardsComponent,
+    HomePageHeaderComponent
   ],
   imports: [
+    FontAwesomeModule,
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
-
 
       { path: '', redirectTo: 'landing', pathMatch: 'full' },
       { path: 'landing', component: LandingPageComponent },
@@ -59,7 +77,7 @@ import { ErrorpageComponent } from './core/errorpage/errorpage.component';
     UsersService,
     Error
   ],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 
 })
 export class AppModule { }

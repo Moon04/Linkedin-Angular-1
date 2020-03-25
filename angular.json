@@ -3,11 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "linkedin": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "css"
+=======
+    "linkedin-home": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+>>>>>>> origin/home
         }
       },
       "root": "",
@@ -17,18 +25,30 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/linkedin",
+=======
+            "outputPath": "dist/linkedin-home",
+>>>>>>> origin/home
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+<<<<<<< HEAD
             "aot": true,
+=======
+            "aot": false,
+>>>>>>> origin/home
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
+=======
+              "src/styles.scss"
+>>>>>>> origin/home
             ],
             "scripts": []
           },
@@ -45,6 +65,10 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
+<<<<<<< HEAD
+=======
+              "aot": true,
+>>>>>>> origin/home
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -66,18 +90,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "linkedin:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "linkedin:build:production"
+=======
+            "browserTarget": "linkedin-home:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "linkedin-home:build:production"
+>>>>>>> origin/home
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "linkedin:build"
+=======
+            "browserTarget": "linkedin-home:build"
+>>>>>>> origin/home
           }
         },
         "test": {
@@ -92,7 +128,11 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
+=======
+              "src/styles.scss"
+>>>>>>> origin/home
             ],
             "scripts": []
           }
@@ -114,15 +154,24 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "linkedin:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "linkedin:serve:production"
+=======
+            "devServerTarget": "linkedin-home:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "linkedin-home:serve:production"
+>>>>>>> origin/home
             }
           }
         }
       }
+<<<<<<< HEAD
     }
   },
   "defaultProject": "linkedin",
@@ -134,4 +183,8 @@
       "styleext": "css"
     }
   }
+=======
+    }},
+  "defaultProject": "linkedin-home"
+>>>>>>> origin/home
 }
